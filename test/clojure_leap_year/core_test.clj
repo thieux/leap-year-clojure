@@ -2,7 +2,7 @@
   (:require [clojure.test :refer :all]
             [clojure-leap-year.core :refer :all]))
 
-(defn is-leap [y] (if (= 1996 y) true false))
+(defn is-leap [y] (if (= 0 (mod y 4)) true false))
 
 (deftest test-leap
   (testing "1996 should be leap"
