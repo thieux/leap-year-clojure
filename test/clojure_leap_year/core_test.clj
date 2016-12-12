@@ -2,6 +2,8 @@
   (:require [clojure.test :refer :all]
             [clojure-leap-year.core :refer :all]))
 
-(deftest a-test
-  (testing "FIXME, I fail."
-    (is (= 0 1))))
+(defn is-leap [y])
+
+(deftest test-leap
+  (testing "1996 should be leap"
+    (is (= (is-leap 1996) true))))
