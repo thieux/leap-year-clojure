@@ -9,3 +9,7 @@
 (deftest test-common
   (testing "2001 should be common"
     (is (= (is-leap 2001) false))))
+
+(deftest test-atypical-common
+  (testing "1900 should be atypical common"
+    (is (= (is-leap 1900) false))))
