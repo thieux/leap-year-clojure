@@ -2,7 +2,7 @@
   (:gen-class))
 
 (defn is-leap [y] 
-  (if (= y 2000)
+  (if (= 0 (mod y 400))
     true
     (if (= 0 (mod y 100)) 
       false
