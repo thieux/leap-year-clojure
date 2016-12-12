@@ -1,7 +1,4 @@
 (ns clojure-leap-year.core
   (:gen-class))
 
-(defn -main
-  "I don't do a whole lot ... yet."
-  [& args]
-  (println "Hello, World!"))
+(defn is-leap [y] (if (= 0 (mod y 4)) true false))
