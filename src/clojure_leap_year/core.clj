@@ -4,6 +4,4 @@
 (defn is-leap [y] 
   (if (= 0 (mod y 100)) 
     false
-    (if (= 0 (mod y 4)) 
-      true 
-      false)))
+    (= 0 (mod y 4))))
