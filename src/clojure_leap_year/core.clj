@@ -2,8 +2,6 @@
   (:gen-class))
 
 (defn is-leap [y] 
-  (if (= 0 (mod y 400))
-    true
-    (if (= 0 (mod y 100)) 
-      false
-      (= 0 (mod y 4)))))
+  (cond (= 0 (mod y 400)) true
+        (= 0 (mod y 100)) false
+        :else (= 0 (mod y 4))))
